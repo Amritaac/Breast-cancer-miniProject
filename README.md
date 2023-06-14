@@ -1,5 +1,30 @@
 # Breast-cancer-miniProject
 Breast cancer detection
+Dataset source :  UCI repository (source: https://archive.ics.uci.edu/ml/datasets/Mammographic+Mass) .
+This data contains 961 instances of masses detected in mammograms, and contains the following attributes:
+
+BI-RADS assessment: 1 to 5 (ordinal)
+Age: patient's age in years (integer)
+Shape: mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal)
+Margin: mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 spiculated=5 (nominal)
+Density: mass density high=1 iso=2 low=3 fat-containing=4 (ordinal)
+Severity: benign=0 or malignant=1 (binominal)
+
+BI-RADS is an assesment of how confident the severity classification is.
+As this is not a "predictive" attribute we will discard it.
+
+The age, shape, margin, and density attributes are the features that we will build our model with, and "severity" is the classification we will attempt to predict based on those attributes. Note that "shape" and "margin" are nominal data types. 
+The "shape" for example is ordered increasingly from round to irregular.
+
+Below ML algorithms were used
+a>Decision tree
+b>Random forest
+c>KNN
+d>Naive Bayes
+e>SVM
+f>Logistic Regression
+g>deep learning with Keras
+
 
 The top 5 rows of our data show that we need to add column names as well as to deal with "?"
 if there are null values and drop them.
